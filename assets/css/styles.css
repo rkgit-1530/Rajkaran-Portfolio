@@ -7,22 +7,23 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 224; /*Blue 224 - Green 142 - Purple 250 - Pink 340*/
+--hue-color: 224; /*Blue 224 - Green 142 - Purple 250 - Pink 340*/
 
-    /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 89%, 60%);
-    --first-color-second: hsl(var(--hue-color), 89%, 60%);
-    --first-color-alt: hsl(var(--hue-color), 77%, 52%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
-    --text-color-light: hsl(var(--hue-color), 8%, 65%);
-    --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #FFF;
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-    --scrollup-color:hsl(var(--hue-color), 89%, 60%);
+/* HEX color mode - Updated with your colors */
+--first-color: #c18b13;           /* Secondary Color */
+--first-color-second: #c18b13;    /* Secondary Color */
+--first-color-alt: #a57811;       /* Slightly darker variant of secondary (optional, or can keep #c18b13) */
+--first-color-lighter: #e7c88f;   /* Lighter variant of secondary color */
+--title-color: #fffff0;           /* Text Color */
+--text-color: #fffff0;            /* Text Color */
+--text-color-light: #fffff0;      /* Text Color */
+--input-color: #f5f0e6;           /* Light background for inputs (can tweak if needed) */
+--body-color: #212121;            /* Background Color */
+--container-color: #212121;       /* Background Color (optional: #212121 or separate if needed) */
+--scroll-bar-color: #3a3a3a;      /* Matching scroll bar to dark theme */
+--scroll-thumb-color: #505050;    /* Matching scroll thumb to dark theme */
+--scrollup-color: #c18b13;        /* Secondary Color */
+
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -676,6 +677,7 @@ img{
 .Expertise__container{
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
+    
 }
 
 .Expertise__content{
@@ -687,6 +689,8 @@ img{
     border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0,0,0,.15);
     transition: .3s;
+    color: #212121;
+    background-color: #fffff0;
 }
 
 .Expertise__content:hover{
@@ -696,7 +700,7 @@ img{
 .Expertise__icon{
     display: block;
     font-size: 1.5rem;
-    color: var(--first-color);
+    color: #212121;
     margin-bottom: var(--mb-1);
 }
 
@@ -707,12 +711,14 @@ img{
     height: 3.5rem; 
     display: flex;
     align-items: center;
+    color: #212121;
 }
 
 .Expertise__button{
     cursor: pointer;
     font-size: var(--small-font-size);
     margin-top: auto; 
+    color: #212121;
 }
 
 .Expertise__button:hover .button__icon{
@@ -725,7 +731,7 @@ img{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -738,7 +744,7 @@ img{
 
 .Expertise__modal-content{
     position: relative;
-    background-color: var(--container-color);
+    background-color: #fffff0;
     padding: 1.5rem;
     border-radius: .5rem;
 }
@@ -755,6 +761,7 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1-5);
+    color: #212121;
 }
 
 .Expertise__modal-close{
@@ -764,6 +771,7 @@ img{
     font-size: 1.5rem;
     color: var(--first-color);
     cursor: pointer;
+
 }
 .Expertise__modal-icon{
     color: var(--first-color);
@@ -906,20 +914,20 @@ img{
 }
 
 .contact__content{
-    background-color: var(--input-color);
+    background-color: #fffff0;
     border-radius: .5rem;
     padding: .75rem 1rem .25rem;
 }
 
 .contact__label{
     font-size: var(--smaller-font-size);
-    color: var(--title-color);
+    color: #212121;
 }
 
 .contact__input{
     width: 100%;
-    background-color: var(--input-color);
-    color: var(--text-color);
+    background-color: #fffff0;
+    color: #212121;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     border: none;
@@ -1007,26 +1015,30 @@ img{
 }
 
 .footer__bg{
-    background-color: var(--first-color-second);
+    background-color: #fffff0;
     padding: 2rem 0 3rem;
 }
 
 .footer__title{
     font-size: var(--h2-font-size);
     margin-bottom: var(--mb-0-25);
+    color: #212121;
 }
 
 .footer__subtitle{
     font-size: var(--small-font-size);
+    color: #212121;
 }
 .footer__links{
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+    color: #212121;
 }
 
 .footer__link:hover{
-    color: var(--first-color-lighter);
+    color: #c18b13;
+    
 }
 
 .footer__social{
@@ -1049,7 +1061,7 @@ img{
 .footer__subtitle,
 .footer__link,
 .footer__social{
-    color: #FFF;
+    color: #212121;
 }
 
 /*========== SCROLL UP ==========*/
